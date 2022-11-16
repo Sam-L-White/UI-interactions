@@ -1,0 +1,29 @@
+.hidden{
+    display: none;
+}
+
+.navbar{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.menu{
+    display: grid;
+    width: 200px;
+    height: 50px;
+    background-color: green;
+}
+
+.menu-2{
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: green;
+}
+
+.menu-3{
+    display: block;
+    width: 200px;
+    height: 50px;
+    background-color: green;
+}
