@@ -5,7 +5,11 @@ function showItems(parent){
 
 function chooseTab(selectedTab){
     if (selectedTab.querySelector(".tab-selected") === null){
-        console.log("not selected")
+        let currentlySelected = document.querySelector(".tab-selected")
+        let selectedDiv = document.createElement("div")
+        selectedDiv.classList.add("tab-selected")
+        selectedTab.appendChild(selectedDiv)
+        currentlySelected.remove()
     }
 }
 
