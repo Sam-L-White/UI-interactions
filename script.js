@@ -1,15 +1,13 @@
-function showItems(parentClass){
-    let items = document.querySelector(`.${parentClass} > .hidden`)
-    items.classList.remove("hidden")
-    
+function showItems(parent){
+    let dropdown = parent.nextElementSibling
+    dropdown.classList.toggle("display")
 }
 
 const navButtons = (() => {
-    let navbar = document.querySelector(".navbar")
-    let navbarItems = Array.from(navbar.children)
-    navbarItems.forEach(item => item.addEventListener("click", (e) => {
-        let parentClass = e.target.className
-        showItems(parentClass)
+    let dropdowns = Array.from(document.querySelectorAll(".dropbtn"))
+    dropdowns.forEach(dropdown => dropdown.addEventListener("click", (e) => {
+        let parent = e.currentTarget
+        showItems(parent)
     }))
 })();
 

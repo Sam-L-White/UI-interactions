@@ -1,29 +1,33 @@
-.hidden{
-    display: none;
+
+.navbar {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 100px);
+  gap: 25px;
 }
 
-.navbar{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.dropdown {
+  position: relative;
+  display: inline-block;
 }
 
-.menu{
-    display: grid;
-    width: 200px;
-    height: 50px;
-    background-color: green;
+.dropbtn {
+  background-color: #dbbe17;
+  padding: 5px;
+}
+  
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: 100%;
+  background-color: #e2e0c4;
 }
 
-.menu-2{
-    display: block;
-    width: 200px;
-    height: 50px;
-    background-color: green;
+.dropdown-p {
+  text-align: center;
 }
 
-.menu-3{
-    display: block;
-    width: 200px;
-    height: 50px;
-    background-color: green;
+.display{
+  display: block;
 }
+  
+  
